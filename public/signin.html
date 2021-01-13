@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="signInPage">
+                <a class="topBtn" href="#">
+                    Sign in</a>
+
+            </div>
+            <div class="signUpPage">
+                <a class="topBtn" href="index.html">
+                    Sign up
+                </a>
+
+            </div>
+        </div>
+    </header>
+    <div class="container">
+<div class="main">
+<form  onsubmit="return loginForm()">
+<table>
+<tr>
+
+<td>Email :</td>
+<td><input type="email" id="logemail" placeholder="Enter your email" required></td>
+
+</tr>
+<td>Password :</td>
+<td><input type="password" id="loginpass" placeholder="Enter your password" required></td>
+
+</tr>
+<tr>
+<td></td>
+<td>
+    <button>Sign In</button>
+</td>
+</tr>
+
+
+</table>
+
+</form>
+
+</div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+<!-- <script>
+
+    function loginForm(){
+let email =localStorage.getItem("emails");
+let passwords =localStorage.getItem("passwords");
+
+
+let username=document.getElementById("logemail").value;
+let password=document.getElementById("loginpass").value;
+
+if((email===username)&&(password===passwords)){
+    window.location.href="profile.html"
+}else if((email!==username)&&(password!==passwords)){
+    alert("Please create account")
+}else{
+    alert("Invalid email or password")
+}
+return false;
+
+    }
+</script> -->
+
+
+
+
+</body>
+</html>

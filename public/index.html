@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="signInPage">
+                <a class="topBtn" href="signin.html">
+                    Sign in</a>
+
+            </div>
+            <div class="signUpPage">
+                <a class="topBtn" href="">
+                    Sign up
+                </a>
+
+            </div>
+        </div>
+    </header>
+    <div class="container">
+<div class="main">
+<form  onsubmit="return signup()">
+<table class="signupform">
+    <tr>
+<td>Name :</td>
+<td><input type="text" id="names" placeholder="Enter name " required></td>
+
+    </tr>
+    <tr>
+        <td>Email :</td>
+        <td><input type="email" id="emails" placeholder="Enter email " required></td>
+        
+            </tr>
+            <tr>
+                <td>Password :</td>
+                <td><input type="password" id="passwords" placeholder="Enter Password " required></td>
+                
+                    </tr>    
+                    <tr>
+                        <td>Number :</td>
+                        <td><input type="number" id="numbers" placeholder="Enter number " required></td>
+                        
+                            </tr>           
+<tr>
+<td>Gender</td>
+<td class="radioBtn">
+    <select  id="gender" >
+        <option value="male">male</option>
+        <option value="female">female</option>
+    </select>
+</td>
+</tr>
+<tr>
+<td>
+    <button >signup</button>
+</td>
+
+</tr>
+</table>
+
+</form>
+
+</div>
+ </div>
+<!-- <script>
+let arr =[];
+
+function signup(){
+let name =document.getElementById("names").value;
+localStorage.setItem("names",name)
+let email =document.getElementById("emails").value;
+localStorage.setItem("emails",email)
+let password =document.getElementById("passwords").value;
+localStorage.setItem("passwords",password)
+let male =document.getElementById("male").checked;
+localStorage.setItem("male",male)
+let female =document.getElementById("female").checked;
+localStorage.setItem("female",female)
+
+if (male === true) {
+                arr.push("Name :" + name, "Email :" + email, "Password :" + passwords, "Male :" + male);
+                alert("Sign Up successfully")
+                window.location.href = "signin.html";
+}
+                else {
+                arr.push("Name :" + name, "Email :" + email, "Password :" + passwords, "Female :" + female);
+            }               
+
+return false;
+        }
+
+</script>
+ -->
+
+
+
+
+
+ <script src="app.js"></script>
+
+</body>
+</html>
